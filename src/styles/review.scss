@@ -1,0 +1,194 @@
+.wrapper {
+	display: flex;
+	gap: 71px;
+	justify-content: center;
+	height: 100vh;
+}
+
+.aside {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	width: 30%;
+	box-sizing: border-box;
+	background: $elemBg;
+}
+
+.header {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	padding-top: 20px;
+}
+
+.header__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.header__title {
+	font-size: 26px;
+	font-weight: 600;
+	letter-spacing: 0.26px;
+	color: $asideHeading;
+	&--accent {
+		font-size: 10px;
+		font-weight: 500;
+		letter-spacing: -0.1px;
+		color: $textSidebar;
+	}
+}
+
+.dashboard {
+	// max-width: 231px;
+	padding-top: 65px;
+	display: flex;
+	flex-direction: column;
+	gap: 44px;
+}
+
+.dashboard__item {
+	padding: 13px 15px 12px 11px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	&--active {
+		background: $elemActive;
+		border-radius: 8px;
+	}
+}
+
+
+.dashboard__descr {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+}
+
+.dashboard__item-text {
+	color: $textSidebar;
+}
+
+.icon {
+	display: flex;
+	align-items: center;
+	align-self: flex-end;
+	gap: 12px;
+}
+
+.main {
+	flex: 1;
+	box-sizing: border-box;
+}
+
+.title {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.table {
+	padding: 30px 44px 40px 38px;
+	background-color: $elemBg;
+}
+
+.table__top {
+	padding-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&-descr {
+		display: flex;
+		flex-direction: column;
+		gap: 7px;
+	}
+	&-title {
+		font-size: 22px;
+		font-weight: 600;
+		letter-spacing: -0.22px;
+		color: $asideHeading;
+	}
+	&-subtitle {
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: -0.14px;
+		color: $topTableSubtitle;
+	}
+}
+
+
+.search-container {
+	position: relative;
+	display: flex;
+	align-items: center;
+ }
+ 
+ input {
+	background: $inputBg;
+	padding: 10px 40px;
+	border-radius: 10px;
+
+ }
+ 
+ .search-icon {
+	left: 10px;
+	width: 20px;
+	height: 20px;
+	background-image: url('/src/images/search.svg'); /* Замініть 'your-search-icon.png' на шлях до вашої іконки. */
+	background-size: cover;
+	position: absolute;
+ /* Відстань іконки від лівого краю input. Змініть, якщо потрібно. */
+	cursor: pointer;
+ }
+
+ .customer__table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+	&-header {
+		text-align: left;
+		color: $textHeadings;
+	}
+ 
+	th, td {
+	  border: 1px solid #ccc;
+	  padding: 8px;
+	//   text-align: center;
+	}
+ 
+	// th {
+	 
+	// }
+ }
+
+ .center-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ }
+
+ .btn {
+	margin: 0 auto;
+	// display: flex;
+	padding: 4px 12px;
+	width: 80px;
+	// justify-content: center;
+	// align-items: center;
+	// gap: 10px;
+	border-radius: 4px;
+	font-size: 14px;
+	letter-spacing: -0.14px;
+	border-width: 1px;
+	border-style: solid;
+	&--active {
+		border-color: $borderActive;
+		background: rgba(22, 192, 152, 0.38);
+	}
+	&--inactive {
+		border-color: $borderInactive;
+		background: $bgInactive;
+	}
+ }
+ 
